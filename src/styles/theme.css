@@ -1,0 +1,108 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   Theme tokens — single source for colour in both themes.
+   Dark is a deep navy palette (no purple). Light keeps its existing look but uses the same token names.
+   Legacy --app-* variables used by older rules and chart helpers are mapped onto these tokens.
+   ───────────────────────────────────────────────────────────────────────── */
+
+body[data-theme='dark'], :root {
+  --bg-app: #0B1220;
+  --bg-sidebar: #0A1020;
+  --bg-surface: #0F1A2B;
+  --bg-surface-2: #13213A;
+  --bg-elevated: #172A45;
+  --border: #1E2E47;
+  --border-subtle: #172338;
+  --text-primary: #E6EDF7;
+  --text-secondary: #A9B6C9;
+  --text-muted: #7586A0;
+  --accent: #2DD4BF;
+  --accent-hover: #5EEAD4;
+  --accent-soft: rgba(45, 212, 191, 0.12);
+  --focus-ring: rgba(45, 212, 191, 0.45);
+  --shadow-card: none;
+  --shadow-pop: 0 8px 24px rgba(0, 0, 0, 0.35);
+
+  --bx-green: #34D399;
+  --bx-amber: #FBBF24;
+  --bx-orange: #FB923C;
+  --bx-red: #F87171;
+  --bx-blue: #60A5FA;
+  --bx-violet: #A78BFA; /* only used for the "Simulated" badge */
+  --bx-grey: #94A3B8;
+  --bx-cyan: #2DD4BF;
+}
+
+body[data-theme='light'] {
+  --bg-app: #edf1f7;
+  --bg-sidebar: #ffffff;
+  --bg-surface: #ffffff;
+  --bg-surface-2: #f5f8fc;
+  --bg-elevated: #ffffff;
+  --border: #cfd9e8;
+  --border-subtle: #e0e7f1;
+  --text-primary: #0f1b2d;
+  --text-secondary: #35465f;
+  --text-muted: #5b6c85;
+  --accent: #0e7490;
+  --accent-hover: #155e75;
+  --accent-soft: rgba(14, 116, 144, 0.09);
+  --focus-ring: rgba(14, 116, 144, 0.4);
+  --shadow-card: 0 1px 2px rgba(15, 27, 45, 0.06);
+  --shadow-pop: 0 8px 24px rgba(15, 27, 45, 0.14);
+
+  --bx-green: #15803d;
+  --bx-amber: #a16207;
+  --bx-orange: #c2410c;
+  --bx-red: #b91c1c;
+  --bx-blue: #1d4ed8;
+  --bx-violet: #6d28d9;
+  --bx-grey: #475569;
+  --bx-cyan: #0e7490;
+}
+
+/* Legacy variable mapping (both themes). */
+body[data-theme='dark'], body[data-theme='light'], :root {
+  --app-bg: var(--bg-app);
+  --app-panel: var(--bg-surface);
+  --app-surface: var(--bg-surface);
+  --app-surface-soft: var(--bg-surface-2);
+  --app-surface-raised: var(--bg-surface-2);
+  --app-border: var(--border);
+  --app-border-soft: var(--border-subtle);
+  --app-panel-border: var(--border);
+  --app-text: var(--text-primary);
+  --app-text-muted: var(--text-secondary);
+  --app-text-faint: var(--text-muted);
+  --app-accent: var(--accent);
+  --app-accent-strong: var(--accent-hover);
+  --app-accent-bg: var(--accent-soft);
+  --app-accent-border: var(--focus-ring);
+  --app-chrome-bg: var(--bg-sidebar);
+  --app-chart-tooltip-bg: var(--bg-elevated);
+  --app-chart-tooltip-border: var(--border);
+  --app-chart-grid: var(--border-subtle);
+  --app-success: var(--bx-green);
+  --app-warning: var(--bx-amber);
+  --app-danger: var(--bx-red);
+  --app-info: var(--bx-blue);
+  --bx-ring: var(--focus-ring);
+  --bx-icon-muted: var(--text-muted);
+  --bx-row-hover: var(--bg-surface-2);
+  --bx-row-selected: var(--accent-soft);
+}
+body[data-theme='light'] { --bx-icon-muted: #475569; }
+body[data-theme='dark'] { --bx-icon-muted: #94a3b8; }
+
+/* Type scale and spacing (both themes) */
+:root, body[data-theme='dark'], body[data-theme='light'] {
+  --fs-page-title: 22px;
+  --fs-page-sub: 13px;
+  --fs-card-title: 14px;
+  --fs-card-sub: 11px;
+  --fs-body: 13px;
+  --fs-small: 12px;
+  --fs-micro: 10px;
+  --fs-nano: 9px;
+  --pad-page: 20px;
+  --gap-section: 16px;
+}

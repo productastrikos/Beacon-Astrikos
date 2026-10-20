@@ -1,0 +1,19 @@
+{
+  "icons": {
+    "flood": "water-wave",
+    "landslide": "mountain",
+    "earthquake": "seismic-wave",
+    "avalanche": "avalanche",
+    "wildfire": "fire",
+    "heatwave": "thermometer",
+    "coldwave": "snowflake",
+    "multi": "puzzle-piece",
+    "cyclone": "cyclone",
+    "drought": "desert",
+    "tsunami": "water-wave",
+    "lightning": "high-voltage"
+  },
+  "tints": {
+    "tsunami": "teal"
+  }
+}

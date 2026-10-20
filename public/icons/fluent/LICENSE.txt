@@ -1,0 +1,2 @@
+Fluent UI Emoji — Flat style. Copyright (c) Microsoft Corporation. MIT License.
+https://github.com/microsoft/fluentui-emoji
