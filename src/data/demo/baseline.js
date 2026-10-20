@@ -10,7 +10,7 @@ import { TEAMS } from './people';
 import { normalizeTask } from '../../config/taskLifecycle';
 
 /** Version bump invalidates persisted demo state in localStorage. */
-export const BASELINE_VERSION = 5;
+export const BASELINE_VERSION = 6;
 
 /**
  * Builds the full operational data slice. Deterministic for a given `base` time:

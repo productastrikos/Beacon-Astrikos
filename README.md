@@ -18,16 +18,7 @@ Requires Node 18+.
 
 ## Demo sign-in
 
-Authentication is a **browser-side demo roster, not security**. Accounts are listed on the login page.
-
-| Username | Password | Role |
-|---|---|---|
-| admin | Astrikos2026 | National Administrator |
-| state | Beacon#State1 | State Control Room Operator |
-| district | Beacon#District1 | District Operator |
-| field | Beacon#Field1 | Field Responder |
-| analyst | Beacon#Analyst1 | Analyst |
-| auditor | Beacon#Auditor1 | Auditor |
+Demo credentials are shared separately.
 
 The profile menu has a *Demo: switch role* shortcut for reviewers.
 

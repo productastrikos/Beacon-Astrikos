@@ -157,7 +157,7 @@ describe('authenticated shell', () => {
     fireEvent.click(screen.getByRole('button', { name: /^Start$/ }));
     fireEvent.click(screen.getByRole('button', { name: /^Pause$/ }));
     expect(dataStore.get().simRuns.S1.stepIndex).toBe(1);
-    expect(screen.getByText(/Administrator tool/)).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: /Simulation & Replay/ })).toBeInTheDocument();
     unmount();
     stopAllTimers();
   });
